@@ -99,9 +99,11 @@ SELECT nomP, prenomP
 FROM PATIENT 
 ORDER  BY nomP DESC;
 
-SELECT nomP, sexe, COALESCE(prenomP, 'généraliste')  as prenom
-FROM PATIENT
-WHERE sexe = 'F';
+-- 3
+
+SELECT nomM, prenomM, COALESCE(specialite, 'généraliste') AS specialite 
+FROM MEDECIN 
+WHERE ville = 'Lyon';
 
 -- 4
 
