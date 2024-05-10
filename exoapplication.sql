@@ -196,6 +196,13 @@ LIMIT 1;
 
 -- 14
 
+SELECT p.numSS, p.nomP, p.prenomP
+FROM PATIENT p 
+JOIN CONSULTE c ON p.numSS = c.numSS
+JOIN MEDECIN m ON c.numRPPS = m.numRPPS
+WHERE p.numRPPS != m.numRPPS;
+
+
 SELECT P.numSS AS NuméroPatient, C.numRPPS AS NuméroMedecin
 FROM CONSULTE AS C JOIN PATIENT P ON (C.numSS = P.numSS)
 WHERE C.numRPPS != P.numSS
