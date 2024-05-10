@@ -151,6 +151,10 @@ SELECT P.nomP, P.prenomP, M.nomM, M.prenomM
 FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
 ORDER BY P.nomP DESC, M.nomM DESC, P.prenomP DESC, M.prenomM DESC;
 
+
+SELECT m2.* FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = m2.ville
+WHERE m1.nomP = 'Dupont' AND m1.prenomP = 'Jean';
+
 -- SELECT COUNT(numRPPS) AS nbConsult, numRPPS AS LeMedecin
 -- FROM CONSULTE WHERE date = '2008-10-14' GROUP BY numRPPS;
 
