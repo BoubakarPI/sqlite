@@ -86,4 +86,9 @@ SELECT *
 FROM MEDECIN
 WHERE specialite = () AND ville = 
 
-SELECT nomP, prenomP, 
+SELECT P.nomP, P.prenomP, M.nomM
+FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
+GROUP BY P.nomP ...
+
+SELECT P.nomP, P.prenomP, M.nomM, M.prenomM
+FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS);
