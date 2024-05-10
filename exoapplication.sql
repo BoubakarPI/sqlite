@@ -78,4 +78,10 @@ WHERE nomP IN ('Dupont', 'Durant', 'MARTINE');
 SELECT COUNT(numRPPS) AS nombreM
 FROM MEDECIN;
 
-SELECT COUNT(numSS) AS nombreP
+SELECT *
+FROM CONSULTE
+WHERE numOrd = NULL ;
+
+SELECT *
+FROM MEDECIN
+WHERE specialite
