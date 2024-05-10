@@ -94,11 +94,11 @@ FROM CONSULTE GROUP BY date;
 SELECT * 
 FROM MEDECIN;
 
-SELECT nomP, prenomP 
+SELECT nomP, prenomP
 FROM PATIENT 
 ORDER  BY nomP DESC;
 
-SELECT nomM, prenomM, specialite 
+SELECT nomM, prenomM, COALESCE(specialite, 'généraliste') 
 FROM MEDECIN
 WHERE ville = 'Lyon';
 
