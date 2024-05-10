@@ -126,4 +126,5 @@ ORDER BY P.nomP, P.prenomP;
 
 SELECT C.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult 
 FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS) 
-GROUP BY C.numRPPS HAVING date_consulte = '2008-10-14';
+WHERE date_consulte = '2008-10-14'
+GROUP BY C.numRPPS;
