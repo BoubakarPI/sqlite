@@ -84,4 +84,6 @@ WHERE numOrd = NULL ;
 
 SELECT *
 FROM MEDECIN
-WHERE specialite
+WHERE specialite = () AND ville = 
+
+SELECT nomP, prenomP, 
