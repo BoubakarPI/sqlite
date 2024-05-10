@@ -89,17 +89,25 @@ SELECT nomM, prenomM, specialite
 FROM MEDECIN
 WHERE ville = 'Lyon';
 
+-- 4
+
 SELECT * 
 FROM PATIENT 
 WHERE dateNaiss > DATE(01-05-1985);
+
+-- 5
 
 SELECT nomM, prenomM 
 FROM MEDECIN 
 WHERE specialite LIKE '%logue%';
 
+-- 6
+
 SELECT prenomP 
 FROM PATIENT
 WHERE nomP IN ('Dupont', 'Durant', 'MARTINE');
+
+-- 7
 
 SELECT COUNT(numRPPS) AS nombreM
 FROM MEDECIN;
