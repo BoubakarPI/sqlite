@@ -13,6 +13,7 @@ CREATE TABLE PATIENT (
     prenomP CHAR(50),
     sexe CHAR(1),
     dateNaiss DATE,
-    numRPPS INTEGER
+    numRPPS INTEGER,
     FOREIGN KEY (numRPPS) REFERENCES MEDECIN(numRPPS)
+
 );
