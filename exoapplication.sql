@@ -122,7 +122,7 @@ WHERE numOrd IS NOT NULL;
 
 SELECT *
 FROM MEDECIN
-(SELECT nom FROM MEDECIN WHERE nomM = 'DESMON', prenomP = 'Paum', ville = '')
+(SELECT nom FROM MEDECIN WHERE nomM = 'DESMON', prenomP = 'Paul', ville = '')
 WHERE specialite = () AND ville = 
 
 SELECT P.nomP, P.prenomP, M.nomM AS NomMedecin
