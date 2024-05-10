@@ -19,8 +19,14 @@ CREATE TABLE PATIENT (
 );
 
 CREATE TABLE CONSULTE (
-    
-)
+    numOrd INTEGER PRIMARY KEY,
+    date DATE,
+    diagnostic VARCHAR(255),
+    numSS INTEGER,
+    FOREIGN KEY (numSS) REFERENCES PATIENT(numSS),
+    numRPPS INTEGER,
+    FOREIGN KEY (numRPPS) REFERENCES MEDECIN(numRPPS)
+);
 
 INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (123456789, 'Dupont', 'Jean', 'Cardiologie', 'Paris', '12 Rue de la Santé'),
