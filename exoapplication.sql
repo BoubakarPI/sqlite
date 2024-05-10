@@ -18,6 +18,10 @@ CREATE TABLE PATIENT (
 
 );
 
+CREATE TABLE CONSULTE (
+    
+)
+
 INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (123456789, 'Dupont', 'Jean', 'Cardiologie', 'Paris', '12 Rue de la Santé'),
 (987654321, 'Martin', 'Marie', 'Pédiatrie', 'Lyon', '8 Avenue des Enfants'),
@@ -28,6 +32,8 @@ INSERT INTO PATIENT (numSS, nomP, prenomP, sexe, dateNaiss, numRPPS) VALUES
 (1234567890, 'Durand', 'Sophie', 'F', '1990-05-15', 123456789),
 (9876543210, 'Lefevre', 'Thomas', 'M', '1985-10-20', 987654321),
 (4567891230, 'Moreau', 'Camille', 'F', '2000-02-10', 456789123);
+
+
 
 SELECT * MEDECIN;
 
