@@ -1,4 +1,10 @@
 CREATE TABLE PATIENT (
     numSS INTEGER PRIMARY KEY AUTOINCREMENT,
-    nomP CHAR()
+    nomP CHAR(50),
+    prenomP CHAR(50),
+    sexe CHAR(1),
+    dateNaiss DATE,
+    numRPPS INTEGER
+    FOREIGN KEY
+
 )
