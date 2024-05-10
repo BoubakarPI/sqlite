@@ -37,3 +37,7 @@ FROM PATIENT GROUP BY nomP
 SELECT nomM, prenomM, specialite 
 FROM MEDECIN
 WHERE ville = 'Lyon';
+
+SELECT * 
+FROM PATIENT 
+WHERE dateNaiss > DATE(01-05-1985);
