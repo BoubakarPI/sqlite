@@ -53,7 +53,7 @@ INSERT INTO CONSULTE (numOrd, date, diagnostic, numSS, numRPPS) VALUES
 (10, '2023-10-20', 'Rhinite', 1234567890, 123456789);
 
 
-SELECT date, COUNT(numOrd)
+SELECT numOrd, COUNT(*)
 FROM CONSULTE GROUP BY date;
 
 SELECT * MEDECIN;
