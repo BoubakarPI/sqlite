@@ -34,6 +34,6 @@ SELECT * MEDECIN;
 SELECT nomP, prenomP 
 FROM PATIENT GROUP BY nomP
 
-SELECT nomP, prenomP, specialite 
+SELECT nomM, prenomM, specialite 
 FROM MEDECIN
 WHERE ville = 'Lyon';
