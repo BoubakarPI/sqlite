@@ -35,10 +35,9 @@ INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (123456789, 'Dupont', 'Jean', 'Cardiologie', 'Paris', '12 Rue de la Santé'),
 (987654321, 'Martin', 'Marie', 'Pédiatrie', 'Lyon', '8 Avenue des Enfants'),
 (456789123, 'Dubois', 'Pierre', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
-INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
-(123456729, 'Yoyo', 'To', 'Cardiologie', 'Paris', '19 Rue de la Santé'),
-(987654331, 'Tata', 'Mou', 'Cardiologie', 'Paris', '8 Avenue des Enfants'),
-(456781123, 'Lala', 'Mum', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
+
+INSERT INTO MEDECIN (numRPPS, nomM, prenomM, ville, adresse) VALUES
+(12345629, 'Yoy', 'Ti', 'Lyon', '19 Rue de la Santé');
 
 SELECT m2.*
 FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = m2.ville
