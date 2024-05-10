@@ -32,4 +32,4 @@ INSERT INTO PATIENT (numSS, nomP, prenomP, sexe, dateNaiss, numRPPS) VALUES
 SELECT * MEDECIN;
 
 SELECT nomP, prenomP 
-FROM PATIENT GROUP BY no
+FROM PATIENT GROUP BY nomP
