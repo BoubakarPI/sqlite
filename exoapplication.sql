@@ -29,6 +29,8 @@ CREATE TABLE CONSULTE (
     FOREIGN KEY (numRPPS) REFERENCES MEDECIN(numRPPS)
 );
 
+ALTER TABLE CONSULTE RENAME date TO date_consulte;
+
 INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (123456789, 'Dupont', 'Jean', 'Cardiologie', 'Paris', '12 Rue de la Santé'),
 (987654321, 'Martin', 'Marie', 'Pédiatrie', 'Lyon', '8 Avenue des Enfants'),
@@ -115,4 +117,4 @@ ORDER BY P.nomP, P.prenomP;
 
 SELECT M.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult
 FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS)
-GROUP BY C.numRPPS;
+GROUP BY C.numRPPS HAVING nbConsult >= 4;
