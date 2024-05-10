@@ -115,6 +115,10 @@ ORDER BY P.nomP, P.prenomP;
 -- SELECT COUNT(numRPPS) AS nbConsult, numRPPS AS LeMedecin
 -- FROM CONSULTE WHERE date = '2008-10-14' GROUP BY numRPPS;
 
-SELECT M.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult
+-- SELECT M.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult
+-- FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS)
+-- GROUP BY C.numRPPS HAVING nbConsult >= 4;
+
+SELECT C.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult 
 FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS)
-GROUP BY C.numRPPS HAVING nbConsult >= 4;
+GROUP BY C.numRPPS;
