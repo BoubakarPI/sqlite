@@ -86,10 +86,10 @@ SELECT *
 FROM MEDECIN
 WHERE specialite = () AND ville = 
 
-SELECT P.nomP, P.prenomP, M.nomM
+SELECT P.nomP, P.prenomP, M.nomM AS NomMedecin
 FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
-GROUP BY P.nomP ...
+ORDER BY P.nomP, P.prenomP;
 
 SELECT P.nomP, P.prenomP, M.nomM, M.prenomM
 FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
-ORDER BY P.nomP;
+ORDER BY P.nomP, P.prenomP;
