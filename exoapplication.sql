@@ -45,6 +45,10 @@ FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = 
 WHERE m1.nomM = 'Dupont' AND m1.prenomM = 'Jean';
 
 
+SELECT m2.*
+FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = m2.ville
+WHERE m1.nomM = 'Dupont' AND m1.prenomM = 'Jean';
+
 INSERT INTO PATIENT (numSS, nomP, prenomP, sexe, dateNaiss, numRPPS) VALUES
 (1234567890, 'Durand', 'Sophie', 'F', '1990-05-15', 123456789),
 (9876543210, 'Lefevre', 'Thomas', 'M', '1985-10-20', 987654321),
