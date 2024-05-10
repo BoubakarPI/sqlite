@@ -112,9 +112,13 @@ WHERE nomP IN ('Dupont', 'Durant', 'MARTINE');
 SELECT COUNT(numRPPS) AS nombreM
 FROM MEDECIN;
 
+-- 8
+
 SELECT *
 FROM CONSULTE
-WHERE numOrd = NULL ;
+WHERE numOrd IS NOT NULL;
+
+-- 9
 
 SELECT *
 FROM MEDECIN
