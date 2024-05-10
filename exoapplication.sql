@@ -125,5 +125,5 @@ ORDER BY P.nomP, P.prenomP;
 -- GROUP BY C.numRPPS HAVING nbConsult >= 4;
 
 SELECT C.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult 
-FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS) WHERE date_consulte = '2008-10-14'
-GROUP BY C.numRPPS;
+FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS) 
+GROUP BY C.numRPPS HAVING date_consulte = '2008-10-14';
