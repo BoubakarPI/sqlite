@@ -167,7 +167,7 @@ ORDER BY P.nomP DESC, P.prenomP DESC;
 
 SELECT numRPPS, COUNT(*) AS nbConsult
 FROM CONSULTE
-WHERE date = '2008-10-14'
+WHERE date_consulte = '2008-10-14'
 GROUP BY numRPPS;
 
 
