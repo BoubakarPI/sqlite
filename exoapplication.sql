@@ -48,3 +48,9 @@ WHERE specialite LIKE '%logue%';
 
 SELECT prenomP 
 FROM PATIENT
+WHERE nomP IN ('Dupont', 'Durant', 'MARTINE');
+
+SELECT COUNT(numRPPS) AS nombreM
+FROM MEDECIN;
+
+SELECT COUNT(numSS) AS nombreP
