@@ -40,7 +40,7 @@ INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (987654331, 'Tata', 'Mou', 'Cardiologie', 'Paris', '8 Avenue des Enfants'),
 (456781123, 'Lala', 'Mum', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
 
-SELECT m2.*, m1.*
+SELECT *
 FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite
 WHERE m1.nomM = 'Dupont' AND m1.prenomM = 'Jean';
 
