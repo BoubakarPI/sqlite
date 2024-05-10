@@ -39,6 +39,8 @@ INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 INSERT INTO PATIENT (numSS, nomP) VALUES
 (12345629, 'Yoy');
 
+UPDATE PATIENT SET sexe = 'F' WHERE nomP = 'Yoy';
+
 SELECT m2.*
 FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = m2.ville
 WHERE m1.nomM = 'Dupont' AND m1.prenomM = 'Jean';
@@ -97,9 +99,9 @@ SELECT nomP, prenomP
 FROM PATIENT 
 ORDER  BY nomP DESC;
 
-SELECT nomP, prenomM, COALESCE(specialite, 'généraliste') 
+SELECT nomP, sexe, COALESCE(specialite, 'généraliste') 
 FROM PATIENT
-WHERE ville = 'Lyon';
+WHERE sexe = 'F';
 
 -- 4
 
