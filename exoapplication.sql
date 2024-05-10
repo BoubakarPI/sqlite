@@ -146,4 +146,7 @@ LIMIT 1;
 
 SELECT P.numSS AS NuméroPatient, C.numRPPS AS NuméroMedecin
 FROM CONSULTE AS C JOIN PATIENT P ON (C.numSS = P.numSS)
-WHERE C.numRPPS != P.numSS;
+WHERE C.numRPPS != P.numSS
+GROUP BY C.numSS;
+
+-- 15
