@@ -56,7 +56,7 @@ INSERT INTO PATIENT (numSS, nomP, prenomP, sexe, dateNaiss, numRPPS) VALUES
 (4567891230, 'Moreau', 'Camille', 'F', '2000-02-10', 456789123);
 
 
-INSERT INTO CONSULTE (numOrd, date, diagnostic, numSS, numRPPS) VALUES
+INSERT INTO CONSULTE (numOrd, date_consulte, diagnostic, numSS, numRPPS) VALUES
 (1, '2023-01-05', 'Rhume', 1234567890, 123456789),
 (2, '2023-02-10', 'Entorse', 9876543210, 987654321),
 (3, '2008-10-14', 'Grippe', 4567891230, 456789123),
