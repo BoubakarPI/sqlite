@@ -165,6 +165,12 @@ ORDER BY P.nomP DESC, P.prenomP DESC;
 
 -- 12
 
+SELECT numRPPS, COUNT(*) AS nbConsult
+FROM CONSULTE
+WHERE date = '2008-10-14'
+GROUP BY numRPPS;
+
+
 SELECT C.numRPPS AS NumeroMedecin, COUNT(C.numRPPS) AS nbConsult 
 FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS) 
 WHERE date_consulte = '2008-10-14'
