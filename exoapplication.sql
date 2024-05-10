@@ -127,7 +127,8 @@ WHERE nomP IN ('Dupont', 'Durant', 'MARTINE');
 -- 7
 
 SELECT COUNT(numRPPS) AS nombreM
-FROM MEDECIN;
+FROM MEDECIN
+WHERE ville = 'Lyon';
 
 -- 8
 
