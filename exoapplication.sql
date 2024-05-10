@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS test(
 
 ALTER TABLE test DROP phone;
 
-ALTER TABLE test CHANGE gender gendre
+ALTER TABLE test MODIFY gender gendre VARCHAR(255);
 
 
 SELECT numOrd, COUNT(*)
