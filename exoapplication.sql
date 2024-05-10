@@ -35,7 +35,12 @@ INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (123456789, 'Dupont', 'Jean', 'Cardiologie', 'Paris', '12 Rue de la Santé'),
 (987654321, 'Martin', 'Marie', 'Pédiatrie', 'Lyon', '8 Avenue des Enfants'),
 (456789123, 'Dubois', 'Pierre', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
+INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
+(123456729, 'Yoyo', 'To', 'Cardiologie', 'Paris', '19 Rue de la Santé'),
+(987654331, 'Tata', 'Mou', 'Cardiologie', 'Paris', '8 Avenue des Enfants'),
+(456781123, 'Lala', 'Mum', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
 
+SELECT * FROM MEDECIN;
 
 INSERT INTO PATIENT (numSS, nomP, prenomP, sexe, dateNaiss, numRPPS) VALUES
 (1234567890, 'Durand', 'Sophie', 'F', '1990-05-15', 123456789),
