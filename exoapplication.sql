@@ -5,6 +5,6 @@ CREATE TABLE PATIENT (
     sexe CHAR(1),
     dateNaiss DATE,
     numRPPS INTEGER
-    FOREIGN KEY 
+    FOREIGN KEY (numRPPS) REFERENCES 
 
 )
