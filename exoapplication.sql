@@ -110,5 +110,5 @@ SELECT P.nomP, P.prenomP, M.nomM, M.prenomM
 FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
 ORDER BY P.nomP, P.prenomP;
 
-SELECT COUNT(C.numRPPS) AS nbConsult, M.numRPPS AS LeMedecini
+SELECT COUNT(C.numRPPS) AS nbConsult, M.numRPPS AS LeMedecin
 FROM CONSULTE AS C JOIN MEDECIN AS M GROUP BY C.numRPPS;
