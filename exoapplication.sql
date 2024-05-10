@@ -41,3 +41,10 @@ WHERE ville = 'Lyon';
 SELECT * 
 FROM PATIENT 
 WHERE dateNaiss > DATE(01-05-1985);
+
+SELECT nomM, prenomM 
+FROM MEDECIN 
+WHERE specialite LIKE '%logue%';
+
+SELECT prenomP 
+FROM PATIENT
