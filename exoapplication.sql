@@ -36,4 +36,4 @@ FROM PATIENT GROUP BY nomP
 
 SELECT nomP, prenomP, specialite 
 FROM MEDECIN
-WHERE ville = 'Lyon'
+WHERE ville = 'Lyon';
