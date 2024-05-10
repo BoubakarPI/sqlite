@@ -36,8 +36,8 @@ INSERT INTO MEDECIN (numRPPS, nomM, prenomM, specialite, ville, adresse) VALUES
 (987654321, 'Martin', 'Marie', 'Pédiatrie', 'Lyon', '8 Avenue des Enfants'),
 (456789123, 'Dubois', 'Pierre', 'Chirurgie', 'Marseille', '25 Rue du Scalpel');
 
-INSERT INTO MEDECIN (numRPPS, nomM, prenomM, ville, adresse) VALUES
-(12345629, 'Yoy', 'Ti', 'Lyon', '19 Rue de la Santé');
+INSERT INTO PATIENT (numSS, nomP) VALUES
+(12345629, 'Yoy');
 
 SELECT m2.*
 FROM MEDECIN m1 JOIN MEDECIN m2 ON m1.specialite = m2.specialite AND m1.ville = m2.ville
@@ -97,8 +97,8 @@ SELECT nomP, prenomP
 FROM PATIENT 
 ORDER  BY nomP DESC;
 
-SELECT nomM, prenomM, COALESCE(specialite, 'généraliste') 
-FROM MEDECIN
+SELECT nomP, prenomM, COALESCE(specialite, 'généraliste') 
+FROM PATIENT
 WHERE ville = 'Lyon';
 
 -- 4
