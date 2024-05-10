@@ -149,8 +149,9 @@ JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
 ORDER BY P.nomP, P.prenomP;
 
 SELECT P.nomP, P.prenomP, M.nomM, M.prenomM
-FROM PATIENT AS P JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
-ORDER BY P.nomP DESC, M.nomM DESC, P.prenomP DESC, M.prenomM DESC;
+FROM PATIENT AS P 
+LEFT JOIN MEDECIN AS M ON (P.numRPPS = M.numRPPS)
+ORDER BY P.nomP DESC, P.prenomP DESC;
 
 
 
