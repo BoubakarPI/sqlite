@@ -70,7 +70,7 @@ INSERT INTO CONSULTE (numOrd, date_consulte, diagnostic, numSS, numRPPS) VALUES
 
 SELECT MIN(numOrd) AS Minim
 FROM CONSULTE
-WHERE numOrd <= Minim ;
+WHERE numOrd = (SELECT MIN(numOrd) FROM CONSULTE) ;
 
 SELECT *
 FROM CONSULTE
