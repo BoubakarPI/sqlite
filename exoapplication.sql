@@ -164,6 +164,7 @@ ORDER BY P.nomP DESC, P.prenomP DESC;
 -- GROUP BY C.numRPPS HAVING nbConsult >= 4;
 
 -- 12
+-- Best
 
 SELECT numRPPS, COUNT(*) AS nbConsult
 FROM CONSULTE
@@ -177,6 +178,14 @@ WHERE date_consulte = '2008-10-14'
 GROUP BY C.numRPPS;
 
 -- 13
+-- Best
+
+SELECT numSS, COUNT(*) AS nbConsultations
+FROM CONSULTE
+GROUP BY numSS
+ORDER BY nbConsultations DESC
+LIMIT 1;
+
 
 SELECT C.numSS AS NuméroPatient, COUNT(C.numSS) AS nbConsult 
 FROM PATIENT P JOIN CONSULTE AS C ON (P.numSS = C.numSS)
