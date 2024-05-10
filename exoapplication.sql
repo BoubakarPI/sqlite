@@ -109,7 +109,8 @@ WHERE ville = 'Lyon';
 
 SELECT * 
 FROM PATIENT 
-WHERE dateNaiss > DATE(01-05-1985);
+WHERE dateNaiss > '1985-05-01';
+
 
 -- 5
 
