@@ -68,6 +68,8 @@ INSERT INTO CONSULTE (numOrd, date_consulte, diagnostic, numSS, numRPPS) VALUES
 (9, '2023-09-15', 'Asthme', 4567891230, 456789123),
 (10, '2023-10-20', 'Rhinite', 1234567890, 123456789);
 
+SELECT AVG(numOrd) AS Maximum
+FROM CONSULTE;
 
 DELETE 
 FROM CONSULTE
