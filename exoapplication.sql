@@ -63,6 +63,8 @@ CREATE TABLE IF NOT EXISTS test(
 
 ALTER TABLE test DROP phone;
 
+ALTER TABLE test CHANGE gender gendre
+
 
 SELECT numOrd, COUNT(*)
 FROM CONSULTE GROUP BY date;
