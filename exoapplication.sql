@@ -230,4 +230,4 @@ FROM CONSULTE AS C JOIN PATIENT P ON (C.numSS = P.numSS)
 WHERE C.numRPPS != P.numSS
 GROUP BY C.numSS;
 
--- 15
+-- 15 t
