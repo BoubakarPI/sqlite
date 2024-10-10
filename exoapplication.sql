@@ -189,8 +189,7 @@ ORDER BY P.nomP DESC, P.prenomP DESC;
 -- FROM CONSULTE AS C JOIN MEDECIN AS M ON (C.numRPPS = M.numRPPS)
 -- GROUP BY C.numRPPS HAVING nbConsult >= 4;
 
--- 12
--- Best
+
 
 SELECT numRPPS, COUNT(*) AS nbConsult
 FROM CONSULTE
